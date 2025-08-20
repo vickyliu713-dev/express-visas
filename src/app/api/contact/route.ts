@@ -71,11 +71,10 @@ export async function POST(req: NextRequest) {
       text,
       replyTo: email || undefined,
     });
-    // Redirect browsers back to home with a success flag
+    // Redirect browsers to thank-you page
     const accept = req.headers.get("accept") || "";
     if (accept.includes("text/html")) {
-      const url = new URL("/", req.url);
-      url.searchParams.set("submitted", "1");
+      const url = new URL("/thank-you", req.url);
       return NextResponse.redirect(url, 303);
     }
     return NextResponse.json({ ok: true });
