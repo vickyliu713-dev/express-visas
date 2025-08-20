@@ -115,6 +115,7 @@ export default function Hero({
                 fill
                 sizes="(min-width: 1024px) 560px, 100vw"
                 priority
+                fetchPriority="high"
                 quality={90}
                 className="object-cover"
               />
