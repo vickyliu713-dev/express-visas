@@ -76,6 +76,18 @@ export default function Header() {
                 >
                   UK Family Visa
                 </Link>
+                <Link
+                  href="/skilled-worker"
+                  className="block px-4 py-2 text-sm text-navy hover:bg-accent hover:text-white transition-colors"
+                >
+                  UK Skilled Worker Visa
+                </Link>
+                <Link
+                  href="/visitor-visa"
+                  className="block px-4 py-2 text-sm text-navy hover:bg-accent hover:text-white transition-colors"
+                >
+                  UK Visitor Visa
+                </Link>
               </div>
             </div>
           </div>
