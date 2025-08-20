@@ -39,7 +39,7 @@ export default function ServiceDetails() {
           <div className="mt-6">
             <Link
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-[18px] font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-lg transform shadow-lg h-11 rounded-md px-6"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-[18px] font-semibold ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-accent text-accent-foreground hover:bg-accent/90 btn-cta transform shadow-lg h-11 rounded-md px-6"
             >
               Apply for a Student Visa
             </Link>

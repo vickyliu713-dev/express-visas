@@ -29,7 +29,7 @@ export default function Hero({
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 whitespace-normal sm:whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-lg hover:scale-105 transform shadow-lg rounded-md group text-base sm:text-lg px-4 sm:px-12 py-3 sm:py-4 h-auto font-semibold border-2 border-accent/30 hover:border-accent/60 transition-all duration-300 text-center leading-snug max-w-[80vw] sm:max-w-none"
+                className="inline-flex items-center justify-center gap-2 whitespace-normal sm:whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-accent text-accent-foreground hover:bg-accent/90 btn-cta transform shadow-lg rounded-md group text-[18px] px-4 sm:px-12 py-3 sm:py-4 h-auto font-semibold border-2 border-accent/30 hover:border-accent/60 text-center leading-snug max-w-[80vw] sm:max-w-none"
               >
                 {ctaText}
                 <svg
@@ -106,7 +106,7 @@ export default function Hero({
               </div>
             </div>
           </div>
-          <div className="relative lg:block hidden">
+          <div className="relative lg:block hidden max-w-[560px] w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={imageSrc}

@@ -45,3 +45,12 @@ html {
     radial-gradient(1000px 600px at 80% 30%, #1b3a60 0%, transparent 60%),
     linear-gradient(135deg, #0f2b46 0%, #163b63 100%);
 }
+
+/* CTA hover unification */
+.btn-cta {
+  transition: transform 300ms, box-shadow 300ms, background-color 300ms;
+}
+.btn-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}

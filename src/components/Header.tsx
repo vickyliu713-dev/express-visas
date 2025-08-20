@@ -70,6 +70,12 @@ export default function Header() {
                 >
                   UK Student Visa
                 </Link>
+                <Link
+                  href="/family-visa"
+                  className="block px-4 py-2 text-sm text-navy hover:bg-accent hover:text-white transition-colors"
+                >
+                  UK Family Visa
+                </Link>
               </div>
             </div>
           </div>
