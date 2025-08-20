@@ -18,7 +18,7 @@ export default function StudentVisaPage() {
       <Hero
         title={<span className="text-accent">UK Student Visa Experts</span>}
         subtitle="Applying for a UK student visa can be confusing — from financial documents to your CAS letter. We make the process simple, accurate, and stress-free, so you can focus on your studies."
-        imageSrc="/hero-visa-consultation-w-BVZME7.jpg"
+        imageSrc="/student-visa-hero.jpg"
         ctaText="Start Your Student Visa Application"
       />
       <ServiceDetails />

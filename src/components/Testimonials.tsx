@@ -24,6 +24,9 @@ export default function Testimonials({
   cName = "Maria",
   cRole = "Visitor Visa Client",
 }: TestimonialsProps) {
+  const activeCount = [aQuote, bQuote, cQuote].filter(Boolean).length;
+  const gridColsLg = activeCount >= 3 ? "lg:grid-cols-3" : "lg:grid-cols-2";
+  const gridClass = `grid grid-cols-1 sm:grid-cols-2 ${gridColsLg} gap-8 justify-center`;
   return (
     <div id="testimonials">
       <section className="py-20 bg-background">
@@ -34,7 +37,7 @@ export default function Testimonials({
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className={`${gridClass} max-w-6xl mx-auto`}>
             {/* Card 1 */}
             {aQuote ? (
               <div className="rounded-lg border border-gray-200 bg-card text-card-foreground shadow-sm relative hover:shadow-lg transition-shadow duration-300 flex flex-col">
