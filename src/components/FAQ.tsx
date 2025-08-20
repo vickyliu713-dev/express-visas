@@ -34,7 +34,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                     data-radix-collection-item=""
                     onClick={() => setOpenId(openId === "1" ? null : "1")}
                   >
-                    Do your prices include Home Office visa fees?
+                    Do your fees include Home Office visa charges?
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
                   </button>
                 </h3>
@@ -49,7 +49,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                   style={faqContentStyle}
                 >
                   <div className="pb-6 text-muted-foreground leading-relaxed">
-                    No. Our prices are for our professional services only. Home Office fees are paid separately when you submit your application.
+                    No, our fee is for professional services. Home Office visa fees and the Immigration Health Surcharge are paid separately.
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                     data-radix-collection-item=""
                     onClick={() => setOpenId(openId === "3" ? null : "3")}
                   >
-                    What happens after I fill out the form?
+                    Can you help employers apply for sponsorship licences?
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
                   </button>
                 </h3>
@@ -85,7 +85,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                   style={faqContentStyle}
                 >
                   <div className="pb-6 text-muted-foreground leading-relaxed">
-                    One of our visa specialists will review your details and contact you directly to discuss your application and next steps.
+                    No, we only handle individual Skilled Worker applications with a Certificate of Sponsorship.
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                     data-radix-collection-item=""
                     onClick={() => setOpenId(openId === "4" ? null : "4")}
                   >
-                    Can you guarantee my visa will be approved?
+                    How long does a Skilled Worker visa take?
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
                   </button>
                 </h3>
@@ -119,7 +119,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                   style={faqContentStyle}
                 >
                   <div className="pb-6 text-muted-foreground leading-relaxed">
-                    No one can guarantee a visa, but we ensure your application is accurate, complete, and supported by the correct documents — which significantly increases your chances of success.
+                    Most applications are processed within 3–8 weeks. Priority services may be available depending on your country.
                   </div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                     data-radix-collection-item=""
                     onClick={() => setOpenId(openId === "5" ? null : "5")}
                   >
-                    How long does the process take?
+                    Can I bring my family with me on a Skilled Worker visa?
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
                   </button>
                 </h3>
@@ -153,7 +153,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                   style={faqContentStyle}
                 >
                   <div className="pb-6 text-muted-foreground leading-relaxed">
-                    Timelines vary depending on the visa type and country of application. In most cases, decisions are made within 3–8 weeks, but faster priority options are sometimes available.
+                    Yes. We can also prepare dependant applications for your partner and children.
                   </div>
                 </div>
               </div>

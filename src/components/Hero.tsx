@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 type HeroProps = {
   title?: React.ReactNode;
@@ -107,11 +108,15 @@ export default function Hero({
             </div>
           </div>
           <div className="relative lg:block hidden max-w-[560px] w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full h-[400px]">
+              <Image
                 src={imageSrc}
                 alt="Professional UK visa experts office"
-                className="w-full h-[400px] object-cover"
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                priority
+                quality={90}
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
             </div>
