@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 type HeroProps = {
-  title?: string;
+  title?: React.ReactNode;
   subtitle?: string;
   imageSrc?: string;
+  ctaText?: string;
 };
 
 export default function Hero({
@@ -11,6 +12,7 @@ export default function Hero({
   subtitle =
     "Fast, reliable UK visa support for study, work, family, and visitor applications with expert guidance.",
   imageSrc = "/hero-visa-consultation-w-BVZME7.jpg",
+  ctaText = "Start Your Visa Application",
 }: HeroProps) {
   return (
     <section className="relative bg-gradient-hero text-white overflow-hidden">
@@ -29,7 +31,7 @@ export default function Hero({
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 whitespace-normal sm:whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-lg hover:scale-105 transform shadow-lg rounded-md group text-base sm:text-lg px-4 sm:px-12 py-3 sm:py-4 h-auto font-semibold border-2 border-accent/30 hover:border-accent/60 transition-all duration-300 text-center leading-snug max-w-[80vw] sm:max-w-none"
               >
-                Start Your Visa Application
+                {ctaText}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

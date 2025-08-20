@@ -16,31 +16,32 @@ export default function StudentVisaPage() {
   return (
     <main>
       <Hero
-        title="UK Student Visa Experts"
-        subtitle="Professional support for international students – CAS guidance, eligibility check, document preparation and complete submission."
+        title={<span className="text-accent">UK Student Visa Experts</span>}
+        subtitle="Applying for a UK student visa can be confusing — from financial documents to your CAS letter. We make the process simple, accurate, and stress-free, so you can focus on your studies."
         imageSrc="/hero-visa-consultation-w-BVZME7.jpg"
+        ctaText="Start Your Student Visa Application"
       />
       <ServiceDetails />
       <WhyUs />
       <HowItWorks
-        step1Title="Eligibility & Course Strategy"
-        step1Desc="We confirm you meet Student route rules and align your documents with your offer and CAS."
-        step2Title="Document Preparation"
-        step2Desc="We assemble financial, academic, and tuberculosis (if needed) evidence and prepare your forms."
-        step3Title="Submission & Decision Support"
-        step3Desc="We submit your application and keep you updated through to decision and visa collection."
+        step1Title="Eligibility Check"
+        step1Desc="We confirm your CAS and financial evidence meet requirements."
+        step2Title="Application Preparation"
+        step2Desc="We prepare your application and review all documents."
+        step3Title="Submission & Updates"
+        step3Desc="We submit and monitor your application until a decision is made."
       />
       <FAQ title="Student Visa FAQs" />
       <Testimonials
-        aQuote="Express Visas made my UK student visa straightforward. I got clear guidance on finances and CAS."
-        aName="Lina"
+        aQuote="Express Visas helped me get my student visa approved without stress. They explained everything clearly and handled the whole process."
+        aName="Rahul"
         aRole="Student Visa Client"
-        bQuote="I received my student visa in time for my intake. The checklist and reviews were detailed and helpful."
-        bName="Ahmed"
+        bQuote="I was worried about my financial evidence, but Express Visas checked everything for me and my visa was approved quickly."
+        bName="Chen"
         bRole="Student Visa Client"
-        cQuote="Great service – they handled the forms and evidence and I felt confident throughout."
-        cName="Chen"
-        cRole="Student Visa Client"
+        cQuote=""
+        cName=""
+        cRole=""
       />
       <ContactForm />
     </main>

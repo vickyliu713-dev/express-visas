@@ -11,7 +11,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="#" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,22 +65,10 @@ export default function Header() {
             <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-2 w-64 rounded-md border border-border bg-white shadow-lg ring-1 ring-black/5 group-hover:translate-y-0 translate-y-1">
               <div className="py-2">
                 <Link
-                  href="#visitor-visa"
-                  className="block px-4 py-2 text-sm text-navy hover:bg-accent hover:text-white transition-colors"
-                >
-                  UK Visitor Visa
-                </Link>
-                <Link
-                  href="#student-visa"
+                  href="/student-visa"
                   className="block px-4 py-2 text-sm text-navy hover:bg-accent hover:text-white transition-colors"
                 >
                   UK Student Visa
-                </Link>
-                <Link
-                  href="#work-visa"
-                  className="block px-4 py-2 text-sm text-navy hover:bg-accent hover:text-white transition-colors"
-                >
-                  UK Work Visa
                 </Link>
               </div>
             </div>

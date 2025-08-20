@@ -36,8 +36,9 @@ export default function Testimonials({
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="rounded-lg border border-gray-200 bg-card text-card-foreground shadow-sm relative hover:shadow-lg transition-shadow duration-300 flex flex-col">
-              <div className="p-6 flex flex-col flex-1">
+            {aQuote ? (
+              <div className="rounded-lg border border-gray-200 bg-card text-card-foreground shadow-sm relative hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                <div className="p-6 flex flex-col flex-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#08305e" strokeOpacity="0.3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-quote h-8 w-8 mb-4"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
                 <div className="mb-4">
                   <div className="flex gap-1">
@@ -56,12 +57,14 @@ export default function Testimonials({
                     <div className="text-sm text-muted-foreground">{aRole}</div>
                   </div>
                 </div>
+                </div>
               </div>
-            </div>
+            ) : null}
 
             {/* Card 2 */}
-            <div className="rounded-lg border border-gray-200 bg-card text-card-foreground shadow-sm relative hover:shadow-lg transition-shadow duration-300 flex flex-col">
-              <div className="p-6 flex flex-col flex-1">
+            {bQuote ? (
+              <div className="rounded-lg border border-gray-200 bg-card text-card-foreground shadow-sm relative hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                <div className="p-6 flex flex-col flex-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#08305e" strokeOpacity="0.3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-quote h-8 w-8 mb-4"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
                 <div className="mb-4">
                   <div className="flex gap-1">
@@ -80,12 +83,14 @@ export default function Testimonials({
                     <div className="text-sm text-muted-foreground">{bRole}</div>
                   </div>
                 </div>
+                </div>
               </div>
-            </div>
+            ) : null}
 
             {/* Card 3 */}
-            <div className="rounded-lg border border-gray-200 bg-card text-card-foreground shadow-sm relative hover:shadow-lg transition-shadow duration-300 flex flex-col">
-              <div className="p-6 flex flex-col flex-1">
+            {cQuote ? (
+              <div className="rounded-lg border border-gray-200 bg-card text-card-foreground shadow-sm relative hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                <div className="p-6 flex flex-col flex-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#08305e" strokeOpacity="0.3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-quote h-8 w-8 mb-4"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
                 <div className="mb-4">
                   <div className="flex gap-1">
@@ -94,7 +99,7 @@ export default function Testimonials({
                     ))}
                   </div>
                 </div>
-                <p className="text-foreground mb-6 leading-relaxed italic flex-1">&quot;{cQuote}&quot;</p>
+                  <p className="text-foreground mb-6 leading-relaxed italic flex-1">&quot;{cQuote}&quot;</p>
                 <div className="flex items-center gap-3 mt-auto">
                   <span className="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
                     <span className="flex h-full w-full items-center justify-center rounded-full bg-accent text-black font-semibold">M</span>
@@ -104,8 +109,9 @@ export default function Testimonials({
                     <div className="text-sm text-muted-foreground">{cRole}</div>
                   </div>
                 </div>
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
 
           <div className="text-center mt-12">

@@ -54,39 +54,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                 </div>
               </div>
 
-              {/* Item 2 */}
-              <div data-state={openId === "2" ? "open" : "closed"} data-orientation="vertical" className="border border-border rounded-lg px-6 bg-background shadow-sm">
-                <h3 data-orientation="vertical" data-state="closed" className="flex">
-                  <button
-                    type="button"
-                    aria-controls="faq-2"
-                    aria-expanded={openId === "2"}
-                    data-state={openId === "2" ? "open" : "closed"}
-                    data-orientation="vertical"
-                    id="faq-trigger-2"
-                    className="flex flex-1 items-center justify-between hover:underline [&[data-state=open]>svg]:rotate-180 text-left font-semibold text-navy hover:text-accent transition-colors py-6"
-                    data-radix-collection-item=""
-                    onClick={() => setOpenId(openId === "2" ? null : "2")}
-                  >
-                    Are you qualified to give immigration advice?
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
-                  </button>
-                </h3>
-                <div
-                  data-state={openId === "2" ? "open" : "closed"}
-                  id="faq-2"
-                  hidden={openId !== "2"}
-                  role="region"
-                  aria-labelledby="faq-trigger-2"
-                  data-orientation="vertical"
-                  className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                  style={faqContentStyle}
-                >
-                  <div className="pb-6 text-muted-foreground leading-relaxed">
-                    Yes. Express Visas is regulated by the OISC (Office of the Immigration Services Commissioner), which means we meet strict standards of professionalism and compliance.
-                  </div>
-                </div>
-              </div>
+              {/* Item 2 removed per request */}
 
               {/* Item 3 */}
               <div data-state={openId === "3" ? "open" : "closed"} data-orientation="vertical" className="border border-border rounded-lg px-6 bg-background shadow-sm">
@@ -190,39 +158,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                 </div>
               </div>
 
-              {/* Item 6 */}
-              <div data-state={openId === "6" ? "open" : "closed"} data-orientation="vertical" className="border border-border rounded-lg px-6 bg-background shadow-sm">
-                <h3 data-orientation="vertical" data-state="closed" className="flex">
-                  <button
-                    type="button"
-                    aria-controls="faq-6"
-                    aria-expanded={openId === "6"}
-                    data-state={openId === "6" ? "open" : "closed"}
-                    data-orientation="vertical"
-                    id="faq-trigger-6"
-                    className="flex flex-1 items-center justify-between hover:underline [&[data-state=open]>svg]:rotate-180 text-left font-semibold text-navy hover:text-accent transition-colors py-6"
-                    data-radix-collection-item=""
-                    onClick={() => setOpenId(openId === "6" ? null : "6")}
-                  >
-                    Can you help if my visa has already been refused?
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
-                  </button>
-                </h3>
-                <div
-                  data-state={openId === "6" ? "open" : "closed"}
-                  id="faq-6"
-                   hidden={openId !== "6"}
-                  role="region"
-                  aria-labelledby="faq-trigger-6"
-                  data-orientation="vertical"
-                  className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                  style={faqContentStyle}
-                >
-                  <div className="pb-6 text-muted-foreground leading-relaxed">
-                    At OISC Level 1 to 2 we cannot assist with appeals or refusals. If your case is complex or has been refused, we can refer you to a higher-level adviser.
-                  </div>
-                </div>
-              </div>
+              {/* Item 6 removed per request */}
             </div>
           </div>
         </div>
