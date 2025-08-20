@@ -1,6 +1,17 @@
 import Link from "next/link";
 
-export default function Hero() {
+type HeroProps = {
+  title?: string;
+  subtitle?: string;
+  imageSrc?: string;
+};
+
+export default function Hero({
+  title = "UK Visa Experts",
+  subtitle =
+    "Fast, reliable UK visa support for study, work, family, and visitor applications with expert guidance.",
+  imageSrc = "/hero-visa-consultation-w-BVZME7.jpg",
+}: HeroProps) {
   return (
     <section className="relative bg-gradient-hero text-white overflow-hidden">
       <div className="absolute inset-0 bg-black/20"></div>
@@ -9,11 +20,9 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                UK Visa Experts
+                {title}
               </h1>
-              <p className="text-xl text-white/90 leading-relaxed">
-                Fast, reliable UK visa support for study, work, family, and visitor applications with expert guidance.
-              </p>
+              <p className="text-xl text-white/90 leading-relaxed">{subtitle}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -98,7 +107,7 @@ export default function Hero() {
           <div className="relative lg:block hidden">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/hero-visa-consultation-w-BVZME7.jpg"
+                src={imageSrc}
                 alt="Professional UK visa experts office"
                 className="w-full h-[400px] object-cover"
               />

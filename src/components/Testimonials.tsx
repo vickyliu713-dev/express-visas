@@ -1,4 +1,29 @@
-export default function Testimonials() {
+type TestimonialsProps = {
+  aQuote?: string;
+  aName?: string;
+  aRole?: string;
+  bQuote?: string;
+  bName?: string;
+  bRole?: string;
+  cQuote?: string;
+  cName?: string;
+  cRole?: string;
+};
+
+export default function Testimonials({
+  aQuote =
+    "Express Visas made my UK spouse visa application stress-free. Clear guidance and no delays. Highly recommended!",
+  aName = "Aisha",
+  aRole = "Family Visa Client",
+  bQuote =
+    "Got my student visa approved first time. The team explained everything clearly and handled all the paperwork.",
+  bName = "Rahul",
+  bRole = "Student Visa Client",
+  cQuote =
+    "I was worried about my visitor visa being refused, but Express Visas guided me perfectly. Visa granted in 2 weeks!",
+  cName = "Maria",
+  cRole = "Visitor Visa Client",
+}: TestimonialsProps) {
   return (
     <div id="testimonials">
       <section className="py-20 bg-background">
@@ -21,16 +46,14 @@ export default function Testimonials() {
                     ))}
                   </div>
                 </div>
-                <p className="text-foreground mb-6 leading-relaxed italic flex-1">
-                  &quot;Express Visas made my UK spouse visa application stress-free. Clear guidance and no delays. Highly recommended!&quot;
-                </p>
+                <p className="text-foreground mb-6 leading-relaxed italic flex-1">&quot;{aQuote}&quot;</p>
                 <div className="flex items-center gap-3 mt-auto">
                   <span className="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
                     <span className="flex h-full w-full items-center justify-center rounded-full bg-accent text-black font-semibold">A</span>
                   </span>
                   <div>
-                    <div className="font-semibold text-navy">Aisha</div>
-                    <div className="text-sm text-muted-foreground">Family Visa Client</div>
+                    <div className="font-semibold text-navy">{aName}</div>
+                    <div className="text-sm text-muted-foreground">{aRole}</div>
                   </div>
                 </div>
               </div>
@@ -47,16 +70,14 @@ export default function Testimonials() {
                     ))}
                   </div>
                 </div>
-                <p className="text-foreground mb-6 leading-relaxed italic flex-1">
-                  &quot;Got my student visa approved first time. The team explained everything clearly and handled all the paperwork.&quot;
-                </p>
+                <p className="text-foreground mb-6 leading-relaxed italic flex-1">&quot;{bQuote}&quot;</p>
                 <div className="flex items-center gap-3 mt-auto">
                   <span className="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
                     <span className="flex h-full w-full items-center justify-center rounded-full bg-accent text-black font-semibold">R</span>
                   </span>
                   <div>
-                    <div className="font-semibold text-navy">Rahul</div>
-                    <div className="text-sm text-muted-foreground">Student Visa Client</div>
+                    <div className="font-semibold text-navy">{bName}</div>
+                    <div className="text-sm text-muted-foreground">{bRole}</div>
                   </div>
                 </div>
               </div>
@@ -73,16 +94,14 @@ export default function Testimonials() {
                     ))}
                   </div>
                 </div>
-                <p className="text-foreground mb-6 leading-relaxed italic flex-1">
-                  &quot;I was worried about my visitor visa being refused, but Express Visas guided me perfectly. Visa granted in 2 weeks!&quot;
-                </p>
+                <p className="text-foreground mb-6 leading-relaxed italic flex-1">&quot;{cQuote}&quot;</p>
                 <div className="flex items-center gap-3 mt-auto">
                   <span className="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
                     <span className="flex h-full w-full items-center justify-center rounded-full bg-accent text-black font-semibold">M</span>
                   </span>
                   <div>
-                    <div className="font-semibold text-navy">Maria</div>
-                    <div className="text-sm text-muted-foreground">Visitor Visa Client</div>
+                    <div className="font-semibold text-navy">{cName}</div>
+                    <div className="text-sm text-muted-foreground">{cRole}</div>
                   </div>
                 </div>
               </div>

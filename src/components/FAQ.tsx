@@ -2,7 +2,8 @@
 import type { CSSProperties } from "react";
 import { useState } from "react";
 
-export default function FAQ() {
+type FAQProps = { title?: string };
+export default function FAQ({ title = "FAQ" }: FAQProps) {
   const [openId, setOpenId] = useState<string | null>(null);
   const faqContentStyle: CSSProperties = {
     ["--radix-accordion-content-height" as string]:
@@ -15,7 +16,7 @@ export default function FAQ() {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-navy mb-4">FAQ</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-navy mb-4">{title}</h2>
           </div>
           <div className="max-w-3xl mx-auto">
             <div className="space-y-4" data-orientation="vertical">

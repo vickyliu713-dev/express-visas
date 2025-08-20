@@ -1,6 +1,22 @@
 import Link from "next/link";
 
-export default function HowItWorks() {
+type HowItWorksProps = {
+  step1Title?: string;
+  step1Desc?: string;
+  step2Title?: string;
+  step2Desc?: string;
+  step3Title?: string;
+  step3Desc?: string;
+};
+
+export default function HowItWorks({
+  step1Title = "Eligibility & Strategy",
+  step1Desc = "We confirm your visa route, check requirements, and outline the best approach.",
+  step2Title = "Expert Preparation",
+  step2Desc = "We prepare and review your application in detail, ensuring accuracy and compliance.",
+  step3Title = "Submission & Ongoing Support",
+  step3Desc = "We manage the submission and keep you fully updated until your decision is made.",
+}: HowItWorksProps) {
   return (
     <div id="how-it-works">
       <section className="py-20 bg-section-bg">
@@ -22,8 +38,8 @@ export default function HowItWorks() {
                   </div>
                 </div>
                 <div className="flex-1 pb-12">
-                  <h3 className="text-xl lg:text-2xl font-semibold text-navy mb-2">Eligibility &amp; Strategy</h3>
-                  <p className="text-lg text-foreground">We confirm your visa route, check requirements, and outline the best approach.</p>
+                  <h3 className="text-xl lg:text-2xl font-semibold text-navy mb-2">{step1Title}</h3>
+                  <p className="text-lg text-foreground">{step1Desc}</p>
                 </div>
               </div>
               <div className="absolute left-8 top-16 w-0.5 h-12 bg-accent/30"></div>
@@ -42,8 +58,8 @@ export default function HowItWorks() {
                   </div>
                 </div>
                 <div className="flex-1 pb-12">
-                  <h3 className="text-xl lg:text-2xl font-semibold text-navy mb-2">Expert Preparation</h3>
-                  <p className="text-lg text-foreground">We prepare and review your application in detail, ensuring accuracy and compliance.</p>
+                  <h3 className="text-xl lg:text-2xl font-semibold text-navy mb-2">{step2Title}</h3>
+                  <p className="text-lg text-foreground">{step2Desc}</p>
                 </div>
               </div>
               <div className="absolute left-8 top-16 w-0.5 h-12 bg-accent/30"></div>
@@ -62,8 +78,8 @@ export default function HowItWorks() {
                   </div>
                 </div>
                 <div className="flex-1 pb-12">
-                  <h3 className="text-xl lg:text-2xl font-semibold text-navy mb-2">Submission &amp; Ongoing Support</h3>
-                  <p className="text-lg text-foreground">We manage the submission and keep you fully updated until your decision is made.</p>
+                  <h3 className="text-xl lg:text-2xl font-semibold text-navy mb-2">{step3Title}</h3>
+                  <p className="text-lg text-foreground">{step3Desc}</p>
                 </div>
               </div>
             </div>

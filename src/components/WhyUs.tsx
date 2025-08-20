@@ -1,6 +1,7 @@
-export default function WhyUs() {
+type WhyUsProps = { className?: string };
+export default function WhyUs({ className = "" }: WhyUsProps) {
   return (
-    <div id="why-choose-us">
+    <div id="why-choose-us" className={className}>
       <section className="py-16 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-10 left-10 w-20 h-20 bg-accent/10 rounded-full blur-xl"></div>
