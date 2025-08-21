@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:webpack": "NEXT_WEBPACK=1 next dev",
+    "clean": "rm -rf .next node_modules/.cache",
+    "start:prod": "next start",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
