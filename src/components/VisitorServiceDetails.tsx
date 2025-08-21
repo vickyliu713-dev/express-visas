@@ -5,7 +5,7 @@ export default function VisitorServiceDetails() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold text-navy mb-3">UK Visitor Visa – From £350</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold text-navy mb-3">UK Visitor Visa – From £100</h2>
           <p className="text-[18px] text-black mb-4">
             Whether you’re visiting the UK for a holiday, to see family, or for business, we provide complete support with your visa application.
           </p>

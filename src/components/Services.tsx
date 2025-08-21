@@ -22,7 +22,7 @@ export default function Services() {
                   <span className="text-3xl">🎓</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Student Visa</h3>
-                <p className="text-lg text-black font-semibold">from £650</p>
+                <p className="text-lg text-black font-semibold">from £250</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">
@@ -49,7 +49,7 @@ export default function Services() {
                   <span className="text-3xl">👥</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Spouse Visa</h3>
-                <p className="text-lg text-black font-semibold">from £950</p>
+                <p className="text-lg text-black font-semibold">from £450</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">
@@ -76,7 +76,7 @@ export default function Services() {
                   <span className="text-3xl">💼</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Skilled Worker Visa</h3>
-                <p className="text-lg text-black font-semibold">from £800</p>
+                <p className="text-lg text-black font-semibold">from £400</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">
@@ -103,7 +103,7 @@ export default function Services() {
                   <span className="text-3xl">✈️</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Visitor Visa</h3>
-                <p className="text-lg text-black font-semibold">from £350</p>
+                <p className="text-lg text-black font-semibold">from £100</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">

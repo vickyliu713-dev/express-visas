@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 type HeroProps = {
   title?: React.ReactNode;
   subtitle?: string;
-  imageSrc?: string;
+  imageSrc?: string | StaticImageData;
   ctaText?: string;
 };
 
@@ -116,6 +116,7 @@ export default function Hero({
                 sizes="(min-width: 1024px) 560px, 100vw"
                 priority
                 fetchPriority="high"
+                placeholder={typeof imageSrc === "string" ? undefined : "blur"}
                 quality={90}
                 className="object-cover"
               />
