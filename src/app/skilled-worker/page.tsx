@@ -17,7 +17,7 @@ export default function SkilledWorkerPage() {
     <main>
       <Hero
         title={<span className="text-accent">UK Skilled Worker Visa Experts</span>}
-        subtitle="Applying for a Skilled Worker visa can be complex. We prepare and submit your application accurately, ensuring you meet Home Office requirements and avoid costly mistakes. (For individuals applying with a Certificate of Sponsorship – not employer licence applications)."
+        subtitle="We prepare and submit Skilled Worker visa applications accurately, ensuring you meet all Home Office requirements."
         imageSrc="/skilled-worker-hero.jpg"
         ctaText="Start Your Skilled Worker Visa Application"
       />

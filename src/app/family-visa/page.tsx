@@ -17,7 +17,7 @@ export default function FamilyVisaPage() {
     <main>
       <Hero
         title={<span className="text-accent">UK Family Visa Experts</span>}
-        subtitle="We provide expert guidance for UK spouse, partner, and dependant visa applications. With fixed fees and clear advice, we help families avoid costly refusals and reunite quickly."
+        subtitle="Clear, fixed-fee support for spouse, partner, and dependant visas — helping families reunite without costly refusals."
         imageSrc="/family-visa-hero.jpg"
         ctaText="Start Your Family Visa Application"
       />

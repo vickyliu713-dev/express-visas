@@ -17,7 +17,7 @@ export default function VisitorVisaPage() {
     <main>
       <Hero
         title={<span className="text-accent">UK Visitor Visa Services</span>}
-        subtitle="Visitor visa applications are often refused when the evidence isn’t clear. We prepare strong, well-documented applications for tourism, family visits, and business trips to maximise your chances of approval."
+        subtitle="Strong, well-documented applications for tourism, family visits, and business trips to reduce refusal risks."
         imageSrc="/visitor-visa-hero.jpg"
         ctaText="Start Your Visitor Visa Application"
       />
