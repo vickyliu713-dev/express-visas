@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type TestimonialsProps = {
   aQuote?: string;
   aName?: string;
@@ -127,7 +129,11 @@ export default function Testimonials({
                 </div>
               </div>
               <span className="font-semibold text-navy ml-2">5.0/5</span>
-              <span className="text-sm text-muted-foreground ml-2">Based on Google Reviews</span>
+              <span className="text-sm text-muted-foreground ml-2 flex items-center gap-1">
+                101
+                <Image src="/google-logo.svg" alt="Google" width={16} height={16} priority={false} />
+                Google Reviews
+              </span>
             </div>
             
           </div>

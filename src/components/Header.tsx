@@ -30,6 +30,9 @@ export default function Header() {
             <Link href="/student-visa" className="px-3 py-2 text-sm text-navy rounded-md hover:bg-accent hover:text-white transition-colors">Student Visa</Link>
             <Link href="/family-visa" className="px-3 py-2 text-sm text-navy rounded-md hover:bg-accent hover:text-white transition-colors">Family Visa</Link>
             <Link href="/skilled-worker" className="px-3 py-2 text-sm text-navy rounded-md hover:bg-accent hover:text-white transition-colors">Skilled Worker Visa</Link>
+            <Link href="/global-talent" className="px-3 py-2 text-sm text-navy rounded-md hover:bg-accent hover:text-white transition-colors">Global Talent Visa</Link>
+            <Link href="/health-and-care-worker" className="px-3 py-2 text-sm text-navy rounded-md hover:bg-accent hover:text-white transition-colors">Health & Care Visa</Link>
+            <Link href="/temp-worker" className="px-3 py-2 text-sm text-navy rounded-md hover:bg-accent hover:text-white transition-colors">Temporary Worker Visa</Link>
             <Link href="/visitor-visa" className="px-3 py-2 text-sm text-navy rounded-md hover:bg-accent hover:text-white transition-colors">Visitor Visa</Link>
           </nav>
 

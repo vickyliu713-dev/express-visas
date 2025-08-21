@@ -85,7 +85,7 @@ export default function FAQ({ title = "FAQ" }: FAQProps) {
                   style={faqContentStyle}
                 >
                   <div className="pb-6 text-muted-foreground leading-relaxed">
-                    No, we only handle individual Skilled Worker applications with a Certificate of Sponsorship.
+                    Yes. We help employers apply for Sponsorship Licences, including eligibility checks, document preparation, compliance guidance, and full application submission.
                   </div>
                 </div>
               </div>
