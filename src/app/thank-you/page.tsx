@@ -1,8 +1,19 @@
 import Link from "next/link";
+import Script from "next/script";
 
 export default function ThankYouPage() {
   return (
-    <main className="min-h-[70vh] flex items-center justify-center bg-secondary px-4 py-16">
+    <>
+      <Script id="gtag-conversion-thank-you" strategy="afterInteractive">
+        {`
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17483022528/NTAsCIf9gocbEMCBx5BB',
+      'value': 1.0,
+      'currency': 'GBP'
+  });
+        `}
+      </Script>
+      <main className="min-h-[70vh] flex items-center justify-center bg-secondary px-4 py-16">
       <div className="relative w-full max-w-md rounded-2xl bg-white shadow-2xl border border-gray-200 p-6 sm:p-8">
         <div className="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-accent flex items-center justify-center shadow-lg">
           <span className="text-black text-xl">✓</span>
@@ -22,7 +33,8 @@ export default function ThankYouPage() {
           </Link>
         </div>
       </div>
-    </main>
+      </main>
+    </>
   );
 }
 
