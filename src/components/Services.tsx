@@ -14,7 +14,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Student */}
             <div className="rounded-lg border border-gray-200 text-card-foreground shadow-sm transition-all duration-300 hover:shadow-lg bg-white h-full flex flex-col">
               <div className="flex flex-col space-y-1.5 p-6 text-center pb-4">
@@ -22,7 +22,7 @@ export default function Services() {
                   <span className="text-3xl">🎓</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Student Visa</h3>
-                <p className="text-lg text-black font-semibold">from £250</p>
+                <p className="text-lg text-black font-semibold">from £100</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">
@@ -49,7 +49,7 @@ export default function Services() {
                   <span className="text-3xl">👥</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Spouse Visa</h3>
-                <p className="text-lg text-black font-semibold">from £450</p>
+                <p className="text-lg text-black font-semibold">from £150</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">
@@ -76,7 +76,7 @@ export default function Services() {
                   <span className="text-3xl">💼</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Skilled Worker Visa</h3>
-                <p className="text-lg text-black font-semibold">from £400</p>
+                <p className="text-lg text-black font-semibold">from £200</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">
@@ -103,7 +103,7 @@ export default function Services() {
                   <span className="text-3xl">✈️</span>
                 </div>
                 <h3 className="tracking-tight text-xl text-navy font-semibold">UK Visitor Visa</h3>
-                <p className="text-lg text-black font-semibold">from £100</p>
+                <p className="text-lg text-black font-semibold">from £50</p>
               </div>
               <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
                 <div className="text-gray-600 leading-relaxed text-sm">
@@ -112,6 +112,60 @@ export default function Services() {
                     <li>• Guidance on eligibility and requirements</li>
                     <li>• Preparation of clear, well-documented applications</li>
                     <li>• Reduces the risk of refusals</li>
+                  </ul>
+                </div>
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center justify-center gap-2 whitespace-normal sm:whitespace-nowrap rounded-md text-sm ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-yellow-400 text-black hover:bg-yellow-500 font-semibold h-auto sm:h-10 px-3 sm:px-4 py-2 w-full mt-auto text-center leading-snug"
+                >
+                  Apply Now
+                </Link>
+              </div>
+            </div>
+
+            {/* Health & Care */}
+            <div className="rounded-lg border border-gray-200 text-card-foreground shadow-sm transition-all duration-300 hover:shadow-lg bg-white h-full flex flex-col">
+              <div className="flex flex-col space-y-1.5 p-6 text-center pb-4">
+                <div className="mx-auto mb-4 w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                  <span className="text-3xl">🏥</span>
+                </div>
+                <h3 className="tracking-tight text-xl text-navy font-semibold">UK Health and Care Visa</h3>
+                <p className="text-lg text-black font-semibold">from £200</p>
+              </div>
+              <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
+                <div className="text-gray-600 leading-relaxed text-sm">
+                  <ul className="space-y-2 text-left">
+                    <li>• Eligibility assessment and requirements check</li>
+                    <li>• Review of Certificate of Sponsorship and documents</li>
+                    <li>• Preparation and submission of your application</li>
+                    <li>• Updates and guidance until your decision</li>
+                  </ul>
+                </div>
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center justify-center gap-2 whitespace-normal sm:whitespace-nowrap rounded-md text-sm ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-yellow-400 text-black hover:bg-yellow-500 font-semibold h-auto sm:h-10 px-3 sm:px-4 py-2 w-full mt-auto text-center leading-snug"
+                >
+                  Apply Now
+                </Link>
+              </div>
+            </div>
+
+            {/* Temporary Worker */}
+            <div className="rounded-lg border border-gray-200 text-card-foreground shadow-sm transition-all duration-300 hover:shadow-lg bg-white h-full flex flex-col">
+              <div className="flex flex-col space-y-1.5 p-6 text-center pb-4">
+                <div className="mx-auto mb-4 w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                  <span className="text-3xl">🧳</span>
+                </div>
+                <h3 className="tracking-tight text-xl text-navy font-semibold">UK Temporary Worker Visa</h3>
+                <p className="text-lg text-black font-semibold">from £200</p>
+              </div>
+              <div className="p-6 pt-0 flex-1 flex flex-col justify-between space-y-4">
+                <div className="text-gray-600 leading-relaxed text-sm">
+                  <ul className="space-y-2 text-left">
+                    <li>• Eligibility assessment for your route</li>
+                    <li>• CoS review (where required)</li>
+                    <li>• Application preparation and submission</li>
+                    <li>• Ongoing support until your decision</li>
                   </ul>
                 </div>
                 <Link

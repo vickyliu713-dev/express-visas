@@ -5,7 +5,7 @@ export default function HealthCareServiceDetails() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold text-navy mb-3">UK Health and Care Visa – From £800</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold text-navy mb-3">UK Health and Care Visa – From £200</h2>
           <p className="text-[18px] text-black mb-4">
             Our service provides full support for professionals applying for a Health and Care visa.
           </p>

@@ -6,7 +6,7 @@ export default function GlobalTalentServiceDetails() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold text-navy mb-3">
-            UK Global Talent Visa – From £800
+            UK Global Talent Visa – From £400
           </h2>
           <p className="text-lg text-foreground max-w-2xl mx-auto">
             We provide complete support for individuals applying for a UK Global Talent visa.
