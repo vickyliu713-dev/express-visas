@@ -17,7 +17,6 @@ export default function Footer() {
                 quality={85}
               />
             </div>
-            <div className="text-xl font-bold text-white text-center">UK Immigration Services</div>
           </div>
           <div className="text-white/90 text-center">
             <div className="text-lg">Phone: +44203 488 0088 | Email: info@expressvisas.co.uk</div>
